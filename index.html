@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b07629a75.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-bluish">
+    <header>
+        <h1 id="title"><b>Student Worker</b> Tax Calculator</h1>
+        <h4 id="subheader">Calculate your earnings before and after state tax is applied.</h4> 
+        <a href="" id="gitref">
+            
+        </a>
+        <i class="fa-brands fa-github">
+                
+        </i>
+    </header>
+    
+    <main>
+        <div class="input">
+            <div class="hours">
+                <p>Hours Worked: </p> 
+            </div>
+            <input type="text" id="hours1" placeholder="Job 1 hours"><br>
+            <div class="more_hours">
+
+            </div>
+            <button id="add" onclick="addHourEl()"><i class="fa-regular fa-square-plus"></i></button>
+            
+            <div class="hourly">
+                <p>Hourly Pay: </p> 
+            </div>
+            <input type="text" id="hourly" placeholder="ex:15.75">
+            <div id="state_section">
+                <p>Your state: 
+                    <select name="" id="state" onchange="getStateVal()" required>
+                        <option value=""></option>
+                        <option value="2.50">AZ</option>
+                        <option value="4.25">CO</option>
+                        <option value="5.19">GA</option>
+                        <option value="5.70">ID</option>
+                        <option value="4.95">IL</option>
+                        <option value="3">IN</option>
+                        <option value="3.80">IA</option>
+                        <option value="4">KY</option>
+                        <option value="3">LA</option>
+                        <option value="5">MA</option>
+                        <option value="4.25">MI</option>
+                        <option value="4.40">MS</option>
+                        <option value="3.99">NC</option>
+                        <option value="2.75">OH</option>
+                        <option value="3.07">PA</option>
+                        <option value="4.55">UT</option>
+                    </select>
+                    
+                </p>
+                <div class="question"><i class="fa-regular fa-circle-question"></i></div>
+                <div class="popup">
+                    <h4>Why is your state not listed? </h4>
+                    <ul>Your state may have: 
+                    <li>No income tax</li>
+                    <li>Graduated-rate income tax</li>
+                    </ul>
+
+                </div>
+            </div>
+            
+
+            
+            <input class="btn" id="submission" type="submit" value="SUBMIT" onclick="print_hours()">
+        </div>
+
+        <div class="output">
+            <h1>Your Earnings:</h1>
+            <div class="tax_section one">
+                <p>Pay before tax: </p>
+                <p id="before"></p>
+            </div>
+            <div class="tax_section two">
+                <p>Pay after tax: </p>
+                <p id="after"></p>
+            </div>
+            
+        <button type="button" class="redo" onclick="redo()">REDO</button>
+        </div>
+
+    
+    </main>
+    <section class="breakdown">
+        <h2>Understanding Your Earnings</h2>
+        <hr>
+        <p id="explain">
+        </p> 
+        
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>

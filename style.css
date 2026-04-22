@@ -1,0 +1,202 @@
+:root{
+   --dark-blue: #004C97;
+   --cyan: #6AD1E3;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header{
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 40px;
+    color: white;
+    border-bottom: 10px solid var(--cyan);
+
+}
+
+/*github upper right hand corner*/
+#gitref{
+    position: absolute;
+    top: 0;
+    right:0;
+    border-left: 80px solid transparent;
+    border-top: 80px solid white;
+}
+
+
+.fa-github{
+    color: var(--dark-blue);
+    position: absolute;
+    top: 3px;
+    right:3px;
+    font-size: 40px;
+}
+.fa-github:hover{
+    color: black;
+}
+/*-------------------------------------*/
+.bg-bluish{
+    background-color: #92c1f054;
+}
+
+
+.input, .output{
+    margin: 50px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgb(120, 119, 119);
+}
+
+.input{
+    padding: 75px;
+    align-content: center;
+    width: 400px;
+}
+.output{
+    padding: 50px;
+    height: 350px;
+}
+
+.output p{
+    margin: 0;
+    padding: 0;
+}
+
+#add{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+}
+
+.fa-square-plus:hover, .fa-circle-minus:hover, .question:hover{
+    color: var(--dark-blue);
+}
+
+.hour-input{
+    margin-top: 5px;
+}
+
+#submission{
+    background-color: white;
+    color: var(--dark-blue);
+    border:thin solid var(--dark-blue);
+}
+
+#submission:hover{
+    color: white;
+    background-color: var(--dark-blue);
+    border: thin solid white;
+}
+
+
+.tax_section{
+    display: flex;
+    align-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.two{
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+#before, #after{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.redo{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--cyan);
+    color: white;
+    border:none;
+}
+
+.redo:hover{
+    color: var(--cyan);
+    background-color: white;
+    border: thin solid var(--cyan);
+}
+
+.popup{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+.question:hover + .popup{
+    display: block;
+    position:absolute;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(120, 119, 119);
+    top: 0;
+    left:165px;
+
+}
+
+#state_section{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    align-content: space-around;
+}
+
+/*breakdown section */
+.breakdown{
+    background-color: white;
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgb(120, 119, 119);
+}
+
+.breakdown h2{
+    padding: 10px;
+    text-align: center;
+}
+/*--------------------*/
+/*Footer section*/
+footer{
+    height: 100px;
+    background-color: var(--dark-blue);
+    border-top: 10px solid var(--cyan);
+}
+/*--------------------*/
+
+#irs{
+    background-color: var(--dark-blue);
+}
+
+
+@media screen and (max-width: 600px) {
+    main{
+        display: block;
+    }
+    .input{
+        margin: 40px auto;
+        padding: none;
+        float: none;
+        padding: 60px;
+        width: 369px;
+
+    }
+
+    .output{
+        width: 369px;
+        padding: 50px;
+        margin: 30px auto;
+        float: none;
+    
+    }
+}
